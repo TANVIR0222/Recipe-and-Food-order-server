@@ -1,5 +1,4 @@
-import mongoose from "mongoose";
-
+const mongoose = require('mongoose');
 const ingredientsItem = new mongoose.Schema({
   name: {
     type: String,
@@ -81,4 +80,6 @@ const itemSchema = new mongoose.Schema({
   },
 });
 
-export const Item = mongoose.model('Item', itemSchema)
+const Item = mongoose.model('Item', itemSchema)
+
+module.exports =Item
