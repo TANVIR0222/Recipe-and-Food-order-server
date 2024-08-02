@@ -27,7 +27,7 @@ async function main() {
 
 const itemRoute = require('./src/Routes/itemRoute.js');
 
-app.use('/item', itemRoute)
+app.use('/api', itemRoute)
 
 main().then(()=>
     console.log('mongoDb')

@@ -1,4 +1,6 @@
 const mongoose = require('mongoose');
+const { Schema } = mongoose;
+
 const ingredientsItem = new mongoose.Schema({
   name: {
     type: String,
